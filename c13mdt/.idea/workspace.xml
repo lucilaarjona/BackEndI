@@ -5,25 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90a8d7a5-5cff-4ecc-a6b0-7f31b47f2171" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/h2_2_1_212.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c13mdt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h2-2.1.212.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Odontologo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/.idea/libraries/h2_2_1_212.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/c13sincronica.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/h2-2.1.212.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/src/Cuenta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c13sincronica/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c12/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../c12/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mdt - Ejercicio para las mesas de trabajo C13.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/c2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/src/com/dh/liquidacionsueldo/main/model/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/src/com/dh/liquidacionsueldo/main/model/EmpleadoContratado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/src/com/dh/liquidacionsueldo/main/model/EmpleadoEfectivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/src/com/dh/liquidacionsueldo/main/service/impl/Liquidador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/src/com/dh/liquidacionsueldo/main/service/impl/LiquidadorEmpleadoContratado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c2/src/com/dh/liquidacionsueldo/main/service/impl/LiquidadorEmpleadoEfectivo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7sincronica/c7sincronica.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7sincronica/src/digital/house/flyweight/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7sincronica/src/digital/house/flyweight/dto/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7sincronica/src/digital/house/flyweight/factory/ComputerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c8mdt/c8mdt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c8mdt/src/AppHotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c8mdt/src/AppVuelo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c8mdt/src/FacadeBusqueda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c8mdt/src/Hotel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c8mdt/src/Vuelo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,8 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/lucila/Documentos/webmedata/CTD-DH/backendI/c15sincronica"
   }
 }]]></component>
   <component name="RunManager">
