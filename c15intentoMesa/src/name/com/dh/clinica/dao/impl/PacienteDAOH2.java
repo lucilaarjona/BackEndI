@@ -9,10 +9,11 @@ import java.util.List;
 
 public class PacienteDAOH2 implements IDao<Paciente> {
     private final static String DB_JDBC_DRIVER = "org.h2.Driver";
-    private final static String DB_URL = "jdbc:h2:~/db_aviones";
+    private final static String DB_URL = "jdbc:h2:~/pacientes";
     private final static String DB_USER = "";
     private final static String DB_PASSWORD = "";
     @Override
+
     public Paciente guardar(Paciente paciente) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -21,37 +22,14 @@ public class PacienteDAOH2 implements IDao<Paciente> {
             Class.forName(DB_JDBC_DRIVER);
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
-            preparedStatement = connection.prepareStatement("INSERT INTO PACIENTE VALUES (?,?,?,?,?,?,?)");
+            preparedStatement = connection.prepareStatement("INSERT INTO pacientes VALUES (?,?,?,?,?,?)");
             preparedStatement.setLong(1, paciente.getId());
-            preparedStatement.setString(2, paciente.getNombre());
-            preparedStatement.setString(3, paciente.getApellido());
+            preparedStatement.setString(2, paciente.getApellido());
+            preparedStatement.setString(3, paciente.getNombre());
             preparedStatement.setString(4, paciente.getDni());
             preparedStatement.setString(5, paciente.getFechaingreso());
-            preparedStatement.setString(6,paciente.getDomicilio());
-            preparedStatement.executeUpdate();
-            preparedStatement.close();
+            preparedStatement.setString(6, paciente.getDomicilio());
 
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLExceptprivate final static String DB_JDBC_DRIVER = "org.h2.Driver";
-    private final static String DB_URL = "jdbc:h2:~/db_aviones";
-    private final static String DB_USER = "sa";
-    private final static String DB_PASSWORD = "";
-    @Override
-    public Avion guardar(Avion avion) {
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-
-        try {
-            Class.forName(DB_JDBC_DRIVER);
-            connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
-
-            preparedStatement = connection.prepareStatement("INSERT INTO aviones VALUES (?,?,?,?,?)");
-            preparedStatement.setLong(1, avion.getId());
-            preparedStatement.setString(2, avion.getMarca());
-            preparedStatement.setString(3, avion.getModelo());
-            preparedStatement.setString(4, avion.getMatricula());
-            preparedStatement.setString(5, avion.getFechaEntradaServicio());
 
             preparedStatement.executeUpdate();
             preparedStatement.close();
@@ -62,12 +40,11 @@ public class PacienteDAOH2 implements IDao<Paciente> {
             throw new RuntimeException(e);
         }
 
-        return avion;
-
+        return paciente;
     }
 
     @Override
-    public void eliminar(Long id) {
+    public void eliminar(long id) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
 
@@ -75,7 +52,7 @@ public class PacienteDAOH2 implements IDao<Paciente> {
             Class.forName(DB_JDBC_DRIVER);
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
-            preparedStatement = connection.prepareStatement("DELETE FROM aviones where id=?");
+            preparedStatement = connection.prepareStatement("DELETE FROM PACIENTES where id=?");
             preparedStatement.setLong(1, id);
 
             preparedStatement.executeUpdate();
@@ -89,31 +66,29 @@ public class PacienteDAOH2 implements IDao<Paciente> {
     }
 
     @Override
-    public Avion buscar(Long id) {
+    public Paciente buscar(long id) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        Avion avion = null;
+        Paciente paciente = null;
 
         try {
             Class.forName(DB_JDBC_DRIVER);
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
-            preparedStatement = connection.prepareStatement("SELECT * FROM aviones where id=?");
+            preparedStatement = connection.prepareStatement("SELECT * FROM PACIENTES where id=?");
             preparedStatement.setLong(1, id);
 
             ResultSet result = preparedStatement.executeQuery();
             while(result.next()){
-                Long idAvion = result.getLong("id");
-                String marcaAvion = result.getString("marca");
-                String modeloAvion = result.getString("modelo");
-                String matriculaAvion = result.getString("matricula");
-                String fechaEntradaServicioAvion = result.getString("fechaEntradaServicio");
-                avion = new Avion();
-                avion.setId(idAvion);
-                avion.setMarca(marcaAvion);
-                avion.setModelo(modeloAvion);
-                avion.setMatricula(matriculaAvion);
-                avion.setFechaEntradaServicio(fechaEntradaServicioAvion);
+                Long idPaciente = result.getLong("id");
+                String apellido = result.getString("apellido");
+                String nombrePaciente = result.getString("nombre");
+                String dniPaciente = result.getString("dni");
+                String fechaIngresoPaciente = result.getString("fechaIngreso");
+                String domicilioPaciente = result.getString("domicilio");
+
+                paciente = new Paciente( idPaciente, apellido, nombrePaciente,dniPaciente, fechaIngresoPaciente, domicilioPaciente);
+
             }
 
             preparedStatement.close();
@@ -123,37 +98,34 @@ public class PacienteDAOH2 implements IDao<Paciente> {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
-        return avion;
+        return paciente;
     }
 
     @Override
     public List<Paciente> buscarTodos() {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
-        List<Paciente> aviones = new ArrayList<>();
+        List<Paciente> pacientes = new ArrayList<>();
 
         try {
             Class.forName(DB_JDBC_DRIVER);
             connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
 
-            preparedStatement = connection.prepareStatement("SELECT * FROM aviones");
+            preparedStatement = connection.prepareStatement("SELECT * FROM pacientes");
 
             ResultSet result = preparedStatement.executeQuery();
-            while(result.next()){
-                Long idAvion = result.getLong("id");
-                String marcaAvion = result.getString("marca");
-                String modeloAvion = result.getString("modelo");
-                String matriculaAvion = result.getString("matricula");
-                String fechaEntradaServicioAvion = result.getString("fechaEntradaServicio");
-                Paciente paciente1 = new Paciente();
-                avion.setId(idAvion);
-                avion.setMarca(marcaAvion);
-                avion.setModelo(modeloAvion);
-                avion.setMatricula(matriculaAvion);
-                avion.setFechaEntradaServicio(fechaEntradaServicioAvion);
 
-                aviones.add(avion);
+            while(result.next()){
+                    Long idPaciente = result.getLong("id");
+                    String apellido = result.getString("apellido");
+                    String nombrePaciente = result.getString("nombre");
+                    String dniPaciente = result.getString("dni");
+                    String fechaIngresoPaciente = result.getString("fechaIngreso");
+                    String domicilioPaciente = result.getString("domicilio");
+                    Paciente paciente = new Paciente( idPaciente, apellido, nombrePaciente,dniPaciente, fechaIngresoPaciente, domicilioPaciente);
+
+
+                pacientes.add(paciente);
             }
 
             preparedStatement.close();
@@ -163,112 +135,6 @@ public class PacienteDAOH2 implements IDao<Paciente> {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return paciente;
-    }ion e) {
-            throw new RuntimeException(e);
-        }
-
-        return paciente;
-
-    }
-
-    @Override
-    public void eliminar(Long id) {
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-
-        try {
-            Class.forName(DB_JDBC_DRIVER);
-            connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
-
-            preparedStatement = connection.prepareStatement("DELETE FROM aviones where id=?");
-            preparedStatement.setLong(1, id);
-
-            preparedStatement.executeUpdate();
-            preparedStatement.close();
-
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    @Override
-    public Avion buscar(Long id) {
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-        Avion avion = null;
-
-        try {
-            Class.forName(DB_JDBC_DRIVER);
-            connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
-
-            preparedStatement = connection.prepareStatement("SELECT * FROM aviones where id=?");
-            preparedStatement.setLong(1, id);
-
-            ResultSet result = preparedStatement.executeQuery();
-            while(result.next()){
-                Long idAvion = result.getLong("id");
-                String marcaAvion = result.getString("marca");
-                String modeloAvion = result.getString("modelo");
-                String matriculaAvion = result.getString("matricula");
-                String fechaEntradaServicioAvion = result.getString("fechaEntradaServicio");
-                avion = new Avion();
-                avion.setId(idAvion);
-                avion.setMarca(marcaAvion);
-                avion.setModelo(modeloAvion);
-                avion.setMatricula(matriculaAvion);
-                avion.setFechaEntradaServicio(fechaEntradaServicioAvion);
-            }
-
-            preparedStatement.close();
-
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-
-        return avion;
-    }
-
-    @Override
-    public List<Avion> buscarTodos() {
-        Connection connection = null;
-        PreparedStatement preparedStatement = null;
-        List<Avion> aviones = new ArrayList<>();
-
-        try {
-            Class.forName(DB_JDBC_DRIVER);
-            connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
-
-            preparedStatement = connection.prepareStatement("SELECT * FROM aviones");
-
-            ResultSet result = preparedStatement.executeQuery();
-            while(result.next()){
-                Long idAvion = result.getLong("id");
-                String marcaAvion = result.getString("marca");
-                String modeloAvion = result.getString("modelo");
-                String matriculaAvion = result.getString("matricula");
-                String fechaEntradaServicioAvion = result.getString("fechaEntradaServicio");
-                Avion avion = new Avion();
-                avion.setId(idAvion);
-                avion.setMarca(marcaAvion);
-                avion.setModelo(modeloAvion);
-                avion.setMatricula(matriculaAvion);
-                avion.setFechaEntradaServicio(fechaEntradaServicioAvion);
-
-                aviones.add(avion);
-            }
-
-            preparedStatement.close();
-
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return aviones;
+        return pacientes;
     }
 }
