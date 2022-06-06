@@ -44,7 +44,7 @@ public class Main {
             throw new RuntimeException(e);
         }
         for (Contacto contacto: listaContactos2);
-        System.out.println(cdlistaContactos);
+        System.out.println(listaContactos);
 
     }
 }
