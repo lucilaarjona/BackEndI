@@ -4,8 +4,8 @@ import com.dh.dao.ConfiguracionJDBC;
 import com.dh.model.Domicilio;
 import com.dh.model.Paciente;
 import org.apache.log4j.PropertyConfigurator;
+import org.junit.Test;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
 
 import java.sql.Date;
 
@@ -17,10 +17,10 @@ public class PacienteDaoH2Test {
 
     public PacienteDaoH2Test() throws Exception {}
 
-    @BeforeAll
-    public static void init() {
-        PropertyConfigurator.configure("src/test/resources/log4j.properties");
-    }
+//    @BeforeAll
+//    public static void init() {
+//        PropertyConfigurator.configure("target/pom.xml");
+//    }
 
     @Test
     public void test01NoSePuedeInstanciarSinConfiguracion() throws Exception {
