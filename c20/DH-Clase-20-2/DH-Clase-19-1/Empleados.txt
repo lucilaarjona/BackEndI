@@ -1,0 +1,4 @@
+Julia;Rodriguez;0;130000.0
+Juan;Gonzalez;0;140000.0
+Mariana;Perez;0;150000.0
+Marcelo;Guraz;0;160000.0

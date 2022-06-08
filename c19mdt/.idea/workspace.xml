@@ -5,7 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e8a438e-40a6-4528-8877-2cec5564660b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c14playground/academiaV3/academia/academia.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c15/clinica-dental 3/clinica-dental.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c15/clinica-dental/clinica-dental.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c20/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c20/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c20/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c20/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c20/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c20/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c20/src/main/java/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c20/src/main/java/Empresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c20/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c2sincronica/v2-profesor-template-method-liquidacionsueldo/template-method-liquidacionsueldo/template-method-liquidacionsueldo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c3/v2-integradora1y2/v2-integradora1y2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c8mdt/Turismo/Turismo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animalesQueClaseEs/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/ejemplo ProxyVacunacion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/src/com/company/Persona.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/src/com/company/Registro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/src/com/company/RegistroVacuna.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c5sincronica/ejemplo_ProxyVacunacion/ejemplo ProxyVacunacion/src/com/company/RegistroVacunaProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7playground/bin/digital/house/flyweight/dto/ComidaDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7playground/bin/digital/house/flyweight/factory/ComidaFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7playground/bin/digital/house/flyweigth/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7playground/src/digital/house/flyweight/dto/ComidaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7playground/src/digital/house/flyweight/factory/ComidaFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../c7playground/src/digital/house/flyweigth/Application.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +68,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/lucila/Documentos/webmedata/CTD-DH/backendI/c20"
   }
 }]]></component>
   <component name="RunManager">
