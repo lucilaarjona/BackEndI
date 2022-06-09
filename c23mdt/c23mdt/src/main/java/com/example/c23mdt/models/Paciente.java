@@ -7,14 +7,16 @@ public class Paciente {
     private String email;
     private String dni;
     private String fechaIngreso;
+    private Odontologo odontologo;
 
-    public Paciente(long id, String apellido, String nombre, String email, String dni, String fechaIngreso) {
+    public Paciente(long id, String apellido, String nombre, String email, String dni, String fechaIngreso, Odontologo odontologo) {
         this.id = id;
         this.apellido = apellido;
         this.nombre = nombre;
         this.email = email;
         this.dni = dni;
         this.fechaIngreso = fechaIngreso;
+        this.odontologo = odontologo;
     }
 
     public long getId() {
@@ -59,5 +61,13 @@ public class Paciente {
 
     public void setFechaIngreso(String fechaIngreso) {
         this.fechaIngreso = fechaIngreso;
+    }
+
+    public Odontologo getOdontologo() {
+        return odontologo;
+    }
+
+    public void setOdontologo(Odontologo odontologo) {
+        this.odontologo = odontologo;
     }
 }
