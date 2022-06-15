@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "024d88ae-c26a-433c-a7c3-589f126eb1ee",
+		"name": "Odontologia-Pacientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AGREGAR PACIENTES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\" : \"Manuel\",\n    \"apellido\" : \"Zapata\",\n    \"dni\" : \"54345\",\n    \"fechaIngreso\": \"2022-06-01\",\n    \"domicilio\" : {\n        \"calle\" : \"calle 1\",\n        \"numero\" : \"123\",\n        \"localidad\" : \"localidad1\",\n        \"provincia\" : \"Santa Fe\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacientes/new",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENER PACIENTE POR ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pacientes/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENER TODOS LOS PACIENTES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pacientes/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR PACIENTE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 4,\n    \"nombre\": \"Marcos\",\n    \"apellido\": \"Zapata\",\n    \"dni\": \"54345\",\n    \"fechaIngreso\": \"2022-06-14T03:05:14.614+00:00\",\n    \"domicilio\": {\n        \"id\": 4,\n        \"calle\": \"calle 1\",\n        \"numero\": \"123\",\n        \"localidad\": \"localidad1\",\n        \"provincia\": \"Santa Fe\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pacientes/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ELIMINAR PACIENTE POR ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/pacientes/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
