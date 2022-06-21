@@ -4,15 +4,15 @@ package com.dh.mascotas.persistence.entities;
 import javax.persistence.*;
 
 @Entity
-public class Movimiento {
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
     @Column
-    private String descripcion;
+    private String usuario;
     @Column
-    private String monto;
+    private String password;
 
     public Integer getId() {
         return id;
@@ -22,19 +22,19 @@ public class Movimiento {
         this.id = id;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
-    public String getMonto() {
-        return monto;
+    public String getPassword() {
+        return password;
     }
 
-    public void setMonto(String monto) {
-        this.monto = monto;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

@@ -1,7 +1,7 @@
 package com.dh.mascotas.service;
 
-import com.dh.mascotas.persistence.entities.Movimiento;
-import com.dh.mascotas.persistence.repository.MovimientoRepository;
+import com.dh.mascotas.persistence.entities.Usuario;
+import com.dh.mascotas.persistence.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,9 +11,9 @@ import java.util.List;
 public class EjemploService {
 
     @Autowired
-    MovimientoRepository repository;
+    UsuarioRepository repository;
 
-    public String save(Movimiento m){
+    public String save(Usuario m){
         if(repository.save(m) != null){
             return "OK";
         }else{
@@ -21,7 +21,7 @@ public class EjemploService {
         }
     }
 
-    public List<Movimiento> obtenerTodos(){
+    public List<Usuario> obtenerTodos(){
         return repository.findAll();
     }
 
